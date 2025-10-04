@@ -1,0 +1,22 @@
+.containerStyle {
+  border: 1px solid black;
+  background-color: #3a6ce9;
+}
+
+.collapsed {
+  margin-right: 120px;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.fa-angle-left,
+.fa-angle-right,
+.fa-address-card,
+.fa-computer,
+.fa-circle-plus,
+.fa-gear,
+.fa-magnifying-glass-arrow-right {
+  color: white;
+}

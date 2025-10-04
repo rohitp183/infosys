@@ -1,0 +1,30 @@
+:host {
+  display: block;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.layout {
+  display: flex;
+  height: calc(100vh - 10%);
+}
+
+.breadcrumb {
+  font-size: 18px;
+  margin: 10px 10px;
+  padding-left: 10px;
+}
+
+.content {
+  background: #f6f7fa;
+  width: -webkit-fill-available;
+}
+
+.page-content {
+  border: 2px solid #fefefe;
+  margin: 0px 20px;
+  overflow-x: hidden;
+  height: calc(100vh - 25%);
+  box-shadow: -3px -3px 5px rgba(0, 0, 0, 0.2), 0 -2px 5px rgba(0, 0, 0, 0.1),
+    2px 0 5px rgba(0, 0, 0, 0.15), -2px 0 5px rgba(0, 0, 0, 0.15);
+}

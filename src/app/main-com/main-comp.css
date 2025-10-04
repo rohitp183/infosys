@@ -1,0 +1,21 @@
+.container {
+  background-color: #fefefe;
+  height: 100vh;
+}
+.custome-border {
+  border-bottom: 1px solid black;
+}
+
+.form {
+  background-color: #f4f7fe;
+}
+
+.no-arrow {
+  -webkit-appearance: none;
+  background-image: none;
+}
+.btn-light {
+  --bs-btn-hover-bg: blue;
+  --bs-btn-hover-border-color: blue;
+  --bs-btn-hover-color: #fff;
+}

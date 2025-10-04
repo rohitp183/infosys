@@ -1,0 +1,33 @@
+<div class="container-fluid px-0">
+  <div
+    class="d-flex flex-column align-items-center containerStyle"
+    [ngStyle]="{ width : isCollapsed ? '180px' : '80px', height : '100vh'}"
+  >
+    <div [ngClass]="{ 'collapsed': isCollapsed }" class="mt-2 cursor">
+      <i
+        [ngClass]="isCollapsed ? 'fa-solid fa-angle-left fa-2x' : 'fa-solid fa-angle-right fa-2x'"
+        (click)="toggleCollapse()"
+      ></i>
+    </div>
+    <div class="d-inline-flex p-2 mt-2 cursor">
+      <i class="fa-regular fa-address-card fa-2x me-3"></i>
+      <span *ngIf="isCollapsed">Address Card</span>
+    </div>
+    <div class="d-inline-flex p-2 mt-2 cursor">
+      <i class="fa-solid fa-computer fa-2x me-3"></i>
+      <span *ngIf="isCollapsed">Address Card</span>
+    </div>
+    <div class="d-inline-flex p-2 mt-2 cursor">
+      <i class="fa-solid fa-circle-plus fa-2x me-3"></i>
+      <span *ngIf="isCollapsed">Address Card</span>
+    </div>
+    <div class="d-inline-flex p-2 mt-2 cursor">
+      <i class="fa-solid fa-gear fa-2x me-3"></i>
+      <span *ngIf="isCollapsed">Address Card</span>
+    </div>
+    <div class="d-inline-flex p-2 mt-2 cursor">
+      <i class="fa-solid fa-magnifying-glass-arrow-right fa-2x me-3"></i>
+      <span *ngIf="isCollapsed">Address Card</span>
+    </div>
+  </div>
+</div>
