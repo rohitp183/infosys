@@ -25,7 +25,7 @@ exports.searchCases = async (req, res, next) => {
             params.push(caseSubCategory);
         }
 
-        console.log(query)
+        
         const [rows] = await pool.query(query, params);
         res.status(200).json({
             message: "Cases fetched successfully",
@@ -33,6 +33,7 @@ exports.searchCases = async (req, res, next) => {
             status: "success"
         });
     } catch (error) {
+        console.log(query)
         next(error);
     }
 }
@@ -45,7 +46,6 @@ exports.getRoles  = async (req, res, next) => {
         res.json({
             message: "Roles fetched successfully",
             data: rows.map(row => row.role),
-            status: "success"
         });
     } catch (error) {
         next(error);
