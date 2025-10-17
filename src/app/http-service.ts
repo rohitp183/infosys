@@ -14,19 +14,19 @@ export class HttpService {
   }
 
   getRoles() {
-    return this.http.post(this.api + '/roles', {})
+    return this.http.get(this.api + '/roles')
   }
 
   getAccessControlTpye() {
-    return this.http.post(this.api + '/accessControlType', {})
+    return this.http.get(this.api + '/accessControlTypes')
   } 
 
   getCaseCategory() {
-    return this.http.post(this.api + '/caseCategory', {})
+    return this.http.get(this.api + '/caseCategories')
   }
 
   getCaseSubCategory() {
-    return this.http.post(this.api + '/caseSubCategory', {})
+    return this.http.get(this.api + '/caseSubCategories')
   }
 
 }
